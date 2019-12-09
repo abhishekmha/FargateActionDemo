@@ -1,0 +1,19 @@
+{
+        "family": "Machineinfo",
+        "networkMode": "awsvpc",
+        "containerDefinitions": [{
+                "name": "Machineinfo-Demo",
+                "image": "nehashirsat/devops_repo:v1.1.0",
+                "portMappings": [{
+                        "containerPort": 9000,
+                        "hostPort": 9000,
+                        "protocol": "tcp"
+                }]
+
+        }],
+        "requiresCompatibilities": [
+                "EC2"
+        ],
+        "cpu": "256",
+        "memory": "512"
+}
